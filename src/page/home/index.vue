@@ -1,15 +1,19 @@
 <template>
-<div class="index">
-  <router-view></router-view>
-</div>
+    <div>
+      <myItem></myItem>
+    </div>
 </template>
 
 <script>
+  import myItem from './components/myItem'
     export default {
-        name: "index"
+        name: "home",
+        components:{
+          myItem
+        }
     }
 </script>
 
-<style scoped>
+<style lang="less">
 
 </style>
